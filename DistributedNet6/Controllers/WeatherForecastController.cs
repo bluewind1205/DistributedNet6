@@ -31,7 +31,7 @@ public class WeatherForecastController : ControllerBase
     }
     [HttpPost]
     public IEnumerable<WeatherForecast> PostInster([FromBody]WeatherForecast input)
-    {
+    { 
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
